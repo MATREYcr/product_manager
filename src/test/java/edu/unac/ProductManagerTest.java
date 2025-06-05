@@ -66,8 +66,6 @@ class ProductManagerTest {
         assertTrue(allProducts.contains(p2));
         assertTrue(allProducts.contains(p3));
     }
-
-/* <<<<<<<<<<<<<<  ✨ Windsurf Command 🌟 >>>>>>>>>>>>>>>> */
     @Test
     void testGetProductsByPriceRange() {
         ProductManager manager = new ProductManager();
@@ -84,10 +82,4 @@ class ProductManagerTest {
         assertEquals(1, productsInRange.size());
         assertTrue(productsInRange.contains(p2));
     }
-/* <<<<<<<<<<  4f632d7b-4df8-438d-bf7f-054d3c5d598d  >>>>>>>>>>> */
-
-
-
-
-
 }
