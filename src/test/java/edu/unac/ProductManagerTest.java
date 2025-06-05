@@ -67,4 +67,27 @@ class ProductManagerTest {
         assertTrue(allProducts.contains(p3));
     }
 
+/* <<<<<<<<<<<<<<  ✨ Windsurf Command 🌟 >>>>>>>>>>>>>>>> */
+    @Test
+    void testGetProductsByPriceRange() {
+        ProductManager manager = new ProductManager();
+        Product p1 = new Product("1", "Laptop", "Electronics", 1200.0);
+        Product p2 = new Product("2", "Shirt", "Clothing", 60.0);
+        Product p3 = new Product("3", "Book", "Education", 25.0);
+
+        manager.addProduct(p1);
+        manager.addProduct(p2);
+        manager.addProduct(p3);
+
+        List<Product> productsInRange = manager.getProductsByPriceRange(50.0, 100.0);
+
+        assertEquals(1, productsInRange.size());
+        assertTrue(productsInRange.contains(p2));
+    }
+/* <<<<<<<<<<  4f632d7b-4df8-438d-bf7f-054d3c5d598d  >>>>>>>>>>> */
+
+
+
+
+
 }
