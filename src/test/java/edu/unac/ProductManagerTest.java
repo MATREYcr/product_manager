@@ -52,7 +52,7 @@ class ProductManagerTest {
     void testListAllProducts() {
         ProductManager manager = new ProductManager();
         Product p1 = new Product("1", "Laptop", "Electronics", 1200.0);
-        Product p2 = new Product("2", "Shirt", "Clothing", 40.0);
+        Product p2 = new Product("2", "Shirt", "Clothing", 0.0);
         Product p3 = new Product("3", "Book", "Education", 25.0);
 
         manager.addProduct(p1);
